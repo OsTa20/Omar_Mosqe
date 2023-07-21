@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+body {
+  background-image: url('../img/bg1.jpg');
+  position: relative;
+  z-index: 1;
+}
+.alldoc {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  background-color: black;
+  display: none;
+  opacity: .7;
+}
+header {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  background-color: rgb(248,172,47);
+  position: relative;
+  z-index: 2;
+}
+header .stud {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  border: 2px solid green;
+}
+header .logo {
+  height: 85px;
+  display: block;
+  margin: 2px auto;
+}
+header .dialog {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  color: white;
+  background: none;
+  
+}
+.studdiv {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 50%;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  padding: 20px auto;
+  webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  z-index: 5;
+}
+.studdiv .stud {
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+  border-radius: 50%;
+  margin: 20px;
+  display: inline-block;
+}
+.studdiv .studna {
+  font-size: 20px;
+  margin: 20px auto;
+}
+.studdiv button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+}
+.studdiv .closestu, .dialogdiv .closedia {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+.dialogdiv {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  text-align: center;
+  padding: 20px 10px;
+  overflow: auto;
+  z-index: 5;
+}
+.marq {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px;
+  height: 500px;
+  background-color: rgba(248,155,47,0.232);
+  padding: 20px;
+}
+.marq p {
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: brown;
+  text-align: center;
+}
+.marq p:after {
+  content: "***";
+  display: block;
+  margin-top: 10px;
+}
+.marq img {
+  width: 95%;
+  display: block;
+  margin: 10px auto;
+}
+nav {
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  z-index: 2;
+}
+nav a {
+  display: inline-block;
+  width: 19%;
+  height: calc(100% - 10px);
+  font-size: 25px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  position: relative;
+}
+nav a:after {
+  content: '|';
+  position: absolute;
+  left: 0;
+  top: -20px;
+  font-size: 10px;
+  /*font-weight: lighther;*/
+}
+nav .newnot {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  background-color: red;
+  display: none;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  border-radius: 50%;
+}
+nav .active {
+  border-top: 5px solid white;
+  border-bottom: 5px solid rgb(248,172,47);
+  color: rgb(248,172,47);
+}
+
+.maindiv {
+  width: calc(100% - 20px);  /*350*/
+  height: 500px;
+  margin: 10px auto;
+  padding: 5px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,.8);
+  overflow: scroll;
+  position: relative;
+}
+.maindiv label {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.maindiv p {
+  text-align: center;
+  padding: 10px;
+  margin: 5px 20px;
+  display: inline-block;
+  font-size: 20px;
+  background-color: white;
+}
+.studsa {
+  border: 2px dashed gold;
+}
+.offdiv {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: red;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  padding: 2px 10px;
+  z-index: 5;
+}
+.offdiv p {
+  line-height: 28px;
+  display: inline-block;
+}
+.offdiv #pageupdate {
+  padding: 2px 5px;
+}
+.ondiv {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 2px 10px;
+  z-index: 5;
+}
+.ondiv p {
+  display: inline-block;
+  line-height: 60px;
+}

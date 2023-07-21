@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+body {
+  /*background-color: #c66e05;*/
+  background-image: url('../img/bg1.jpg');
+}
+.maindiv {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  top: calc((100% - 250px)/2);
+  margin: 5px auto;
+  border: 2px solid black;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,.7);
+}
+.bg1 {
+  width: 350px;
+  height: 200px;
+  border: 1px dashed black;
+}
+.p1 {
+  background-color: rgba(252,242,155,0.7);
+  text-align: center;
+  font-weight: bold;
+}
